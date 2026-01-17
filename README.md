@@ -1,0 +1,102 @@
+# bda-modulo-3-evaluacion-final-MatiC-hub-1
+bda-modulo-3-evaluacion-final-MatiC-hub-1 created by GitHub Classroom
+
+# Evaluación - Módulo 3.- Transformación y análisis de datos
+
+## 📌 Descripción del proyecto
+
+Este repositorio contiene la resolución del **ejercicio de evaluación del Módulo 3 de "Transformación y análisis de datos"**. El objetivo del proyecto es realizar un análisis exploratorio, estadístico y visual de datos relacionados con el comportamiento de clientes dentro de un **programa de lealtad de una aerolínea**, utilizando Python y las librerías vistas durante el módulo.
+
+El trabajo sigue una metodología clara y reproducible, similar a la que se utilizaría en un entorno profesional de análisis de datos.
+
+---
+
+## 📂 Estructura del repositorio
+
+```text
+├── data/
+│   ├── Customer Flight Activity.csv
+│   └── Customer Loyalty History.csv
+│
+├── notebooks/
+│   └── resolucion_final.ipynb
+│
+├── outputs/
+│   └── figures/
+│
+├── README.md
+```
+
+### Descripción de carpetas
+
+* **data/**: contiene los datasets originales proporcionados para el ejercicio (sin modificar).
+* **notebooks/**: notebook principal con todo el análisis, limpieza, visualizaciones e interpretaciones.
+* **outputs/**: resultados generados durante el análisis (principalmente gráficos).
+* **README.md**: documentación del proyecto.
+
+---
+
+## 🧠 Metodología de trabajo
+
+El proyecto se desarrolla siguiendo las siguientes fases:
+
+### 1️⃣ Exploración y limpieza de datos (EDA)
+
+* Carga de los datasets.
+* Exploración inicial (`head`, `info`, `describe`).
+* Identificación y tratamiento de valores nulos.
+* Verificación de tipos de datos y consistencia.
+* Unión de los datasets mediante la clave `Loyalty Number`.
+
+### 2️⃣ Análisis estadístico
+
+* Estadísticas descriptivas de variables numéricas relevantes.
+* Identificación de valores atípicos.
+* Análisis de correlaciones.
+* Análisis de variables categóricas mediante distribuciones de frecuencia.
+
+En todos los casos, los resultados se acompañan de una **interpretación en lenguaje natural**, orientada a un público no técnico.
+
+### 3️⃣ Visualización de datos
+
+Se utilizan gráficos adecuados para responder a las preguntas planteadas en el enunciado, entre ellas:
+
+* Distribución de vuelos reservados por mes.
+* Relación entre distancia volada y puntos acumulados.
+* Distribución geográfica de clientes.
+* Comparación de salarios según nivel educativo.
+* Distribución de tipos de tarjeta de fidelidad.
+* Análisis conjunto de estado civil y género.
+
+Cada visualización incluye una breve interpretación.
+
+### 4️⃣ Evaluación de diferencias por nivel educativo
+
+* Preparación del subconjunto de datos relevante.
+* Agrupación por nivel educativo.
+* Cálculo de estadísticas descriptivas del número de vuelos reservados.
+* Interpretación de los resultados.
+
+---
+
+## 🛠️ Herramientas utilizadas
+
+* **Python**
+* **Pandas**: manipulación y análisis de datos.
+* **NumPy**: operaciones numéricas.
+* **Matplotlib** y **Seaborn**: visualización de datos.
+
+---
+
+## 📌 Buenas prácticas
+
+* Código comentado y estructurado.
+* Uso de nombres de variables claros.
+* Separación entre datos originales y resultados.
+* Commits descriptivos durante el desarrollo del proyecto.
+
+---
+
+## ✍️ Notas finales
+
+Este proyecto no solo busca cumplir con los requisitos de la evaluación, sino reflejar una forma de trabajar **ordenada, razonada y defendible**, alineada con el rol de analista de datos en un entorno profesional.
