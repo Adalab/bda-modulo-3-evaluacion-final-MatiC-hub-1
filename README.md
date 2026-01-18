@@ -22,7 +22,8 @@ El trabajo sigue una metodología clara y reproducible, similar a la que se util
 │   └── resolucion_final.ipynb
 │
 ├── outputs/
-│   └── figures/
+│   ├── vuelos_por_mes.png
+│   └── distancia_volada_y_puntos.png
 │
 ├── README.md
 ```
@@ -44,7 +45,8 @@ El proyecto se desarrolla siguiendo las siguientes fases:
 
 * Carga de los datasets.
 * Exploración inicial (`head`, `info`, `describe`).
-* Identificación y tratamiento de valores nulos.
+* Identificación y tratamiento de valores nulos y duplicidades lógicas.
+* Análisis de posibles duplicados y agregación de la información cuando fue necesario para garantizar la consistencia del     análisis.
 * Verificación de tipos de datos y consistencia.
 * Unión de los datasets mediante la clave `Loyalty Number`.
 
@@ -72,7 +74,7 @@ Cada visualización incluye una breve interpretación.
 
 Las visualizaciones generadas durante el análisis se guardan en la carpeta outputs/ para facilitar su revisión independiente del notebook.
 
-### 4️⃣ Evaluación de diferencias por nivel educativo
+### 4️⃣ Evaluación de diferencias por nivel educativo (en desarrollo)
 
 * Preparación del subconjunto de datos relevante.
 * Agrupación por nivel educativo.
@@ -87,7 +89,7 @@ Las visualizaciones generadas durante el análisis se guardan en la carpeta outp
 * **Pandas**: manipulación y análisis de datos.
 * **NumPy**: operaciones numéricas.
 * **Matplotlib** y **Seaborn**: visualización de datos.
-* **Os**: gestión de rutas y creación de directorios.
+* **Os**: gestión de rutas y creación de directorios para la generación de outputs.
 
 ---
 
@@ -102,4 +104,7 @@ Las visualizaciones generadas durante el análisis se guardan en la carpeta outp
 
 ## ✍️ Notas finales
 
-Este proyecto no solo busca cumplir con los requisitos de la evaluación, sino reflejar una forma de trabajar **ordenada, razonada y defendible**, alineada con el rol de analista de datos en un entorno profesional.
+La variable Distance no especifica la unidad de medida en los datasets originales. Dado que todos los registros corresponden a clientes de Canadá y que los valores observados son coherentes con programas de fidelización de aerolíneas en contexto norteamericano, se interpreta la distancia como expresada en millas. Esta suposición se documenta únicamente a efectos analíticos.
+
+Este proyecto no solo busca cumplir con los requisitos de la evaluación, sino reflejar una forma de trabajar ordenada, razonada y defendible, alineada con el rol de analista de datos en un entorno profesional.
+
