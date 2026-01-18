@@ -70,6 +70,8 @@ Se utilizan gráficos adecuados para responder a las preguntas planteadas en el 
 
 Cada visualización incluye una breve interpretación.
 
+Las visualizaciones generadas durante el análisis se guardan en la carpeta outputs/ para facilitar su revisión independiente del notebook.
+
 ### 4️⃣ Evaluación de diferencias por nivel educativo
 
 * Preparación del subconjunto de datos relevante.
