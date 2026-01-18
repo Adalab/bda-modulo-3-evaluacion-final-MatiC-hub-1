@@ -87,6 +87,7 @@ Las visualizaciones generadas durante el análisis se guardan en la carpeta outp
 * **Pandas**: manipulación y análisis de datos.
 * **NumPy**: operaciones numéricas.
 * **Matplotlib** y **Seaborn**: visualización de datos.
+* **Os**: gestión de rutas y creación de directorios.
 
 ---
 
