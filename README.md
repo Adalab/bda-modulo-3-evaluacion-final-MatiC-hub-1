@@ -23,7 +23,12 @@ El trabajo sigue una metodología clara y reproducible, similar a la que se util
 │
 ├── outputs/
 │   ├── vuelos_por_mes.png
-│   └── distancia_volada_y_puntos.png
+│   ├── distancia_volada_y_puntos.png
+│   ├── clientes_por_provincia.png
+│   ├── salario_por_nivel_educativo.png
+│   ├── tarjetas_fidelidad.png
+│   └── estado_civil_genero.png
+│   └── matriz_correlacion.png
 │
 ├── README.md
 ```
@@ -73,6 +78,22 @@ Se utilizan gráficos adecuados para responder a las preguntas planteadas en el 
 Cada visualización incluye una breve interpretación.
 
 Las visualizaciones generadas durante el análisis se guardan en la carpeta outputs/ para facilitar su revisión independiente del notebook.
+
+### Outputs generados
+
+Durante la Fase 2 de análisis estadístico se ha generado y guardado el siguiente gráfico en la carpeta `outputs/`:
+
+* `matriz_correlacion.png`: matriz de correlación entre las principales variables numéricas del dataset.
+
+Durante la Fase 3 de visualización se han generado y guardado los siguientes gráficos en la carpeta `outputs/`:
+
+* `vuelos_por_mes.png`: distribución mensual del número de vuelos reservados.
+* `distancia_volada_y_puntos.png`: relación entre la distancia volada y los puntos acumulados.
+* `clientes_por_provincia.png`: distribución de clientes por provincia, destacando las tres provincias con mayor concentración.
+* `salario_por_nivel_educativo.png`: comparación del salario promedio según nivel educativo.
+* `tarjetas_fidelidad.png`: proporción de clientes por tipo de tarjeta de fidelidad.
+* `estado_civil_genero.png`: distribución conjunta de clientes por estado civil y género.
+
 
 ### 4️⃣ Evaluación de diferencias por nivel educativo (en desarrollo)
 
