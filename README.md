@@ -13,7 +13,6 @@ El trabajo sigue una metodología clara y reproducible, similar a la que se util
 
 ## 📂 Estructura del repositorio
 
-```text
 ├── data/
 │   ├── Customer Flight Activity.csv
 │   └── Customer Loyalty History.csv
@@ -22,17 +21,16 @@ El trabajo sigue una metodología clara y reproducible, similar a la que se util
 │   └── resolucion_final.ipynb
 │
 ├── outputs/
-    ├── vuelos_por_mes.png
-    ├── distancia_volada_y_puntos.png
-    ├── clientes_por_provincia.png
-    ├── salario_promedio_por_nivel_educativo.png
-    ├── tipos_tarjeta_fidelidad.png
-    ├── estado_civil_genero.png
-    ├── matriz_correlacion.png
-    └── boxplot_vuelos_por_nivel_educativo.png
+│   ├── vuelos_por_mes.png
+│   ├── distancia_volada_y_puntos_acumulados.png
+│   ├── clientes_por_provincia.png
+│   ├── salario_promedio_por_educacion.png
+│   ├── proporcion_tarjetas_fidelidad.png
+│   ├── clientes_por_estado_civil_genero.png
+│   ├── matriz_correlacion.png
+│   └── boxplot_vuelos_por_nivel_educativo.png
 │
-├── README.md
-```
+└── README.md
 
 ### Descripción de carpetas
 
@@ -52,7 +50,7 @@ El proyecto se desarrolla siguiendo las siguientes fases:
 * Carga de los datasets.
 * Exploración inicial (`head`, `info`, `describe`).
 * Identificación y tratamiento de valores nulos y duplicidades lógicas.
-* Análisis de posibles duplicados y agregación de la información cuando fue necesario para garantizar la consistencia del     análisis.
+* Análisis de posibles duplicados y agregación de la información cuando fue necesario para garantizar la consistencia del análisis.
 * Verificación de tipos de datos y consistencia.
 * Unión de los datasets mediante la clave `Loyalty Number`.
 
@@ -78,11 +76,20 @@ Se utilizan gráficos adecuados para responder a las preguntas planteadas en el 
 * Distribución de tipos de tarjeta de fidelidad.
 * Análisis conjunto de estado civil y género.
 
-Cada visualización incluye una breve interpretación.
+Cada visualización incluye una breve interpretación en lenguaje natural, orientada a facilitar la comprensión de los resultados.
 
 Las visualizaciones generadas durante el análisis se guardan en la carpeta outputs/ para facilitar su revisión independiente del notebook.
 
-### Outputs generados
+### 4️⃣ Evaluación de diferencias por nivel educativo
+
+* Preparación del subconjunto de datos relevante.
+* Agrupación por nivel educativo.
+* Cálculo de estadísticas descriptivas del número de vuelos reservados.
+* Interpretación de los resultados.
+
+---
+
+## Outputs generados
 
 Durante la Fase 2 de análisis estadístico se ha generado y guardado el siguiente gráfico en la carpeta `outputs/`:
 
@@ -91,19 +98,15 @@ Durante la Fase 2 de análisis estadístico se ha generado y guardado el siguien
 Durante la Fase 3 de visualización se han generado y guardado los siguientes gráficos en la carpeta `outputs/`:
 
 * `vuelos_por_mes.png`: distribución mensual del número de vuelos reservados.
-* `distancia_volada_y_puntos.png`: relación entre la distancia volada y los puntos acumulados.
+* `distancia_volada_y_puntos_acumulados.png`: relación entre la distancia volada y los puntos acumulados.
 * `clientes_por_provincia.png`: distribución de clientes por provincia, destacando las tres provincias con mayor concentración.
-* `salario_por_nivel_educativo.png`: comparación del salario promedio según nivel educativo.
-* `tarjetas_fidelidad.png`: proporción de clientes por tipo de tarjeta de fidelidad.
-* `estado_civil_genero.png`: distribución conjunta de clientes por estado civil y género.
+* `salario_promedio_por_educacion.png`: comparación del salario promedio según nivel educativo.
+* `proporcion_tarjetas_fidelidad.png`: proporción de clientes por tipo de tarjeta de fidelidad.
+* `clientes_por_estado_civil_y_genero.png`: distribución conjunta de clientes por estado civil y género.
 
+Durante la Fase 4 de evaluación de diferenccias se ha generado y guardado el siguiente gráfico en la carpeta `outputs/`:
 
-### 4️⃣ Evaluación de diferencias por nivel educativo (en desarrollo)
-
-* Preparación del subconjunto de datos relevante.
-* Agrupación por nivel educativo.
-* Cálculo de estadísticas descriptivas del número de vuelos reservados.
-* Interpretación de los resultados.
+* `boxplot_vuelos_por_nivel_educativo.png`: comparación de la distribución del número de vuelos reservados por mes entre los distintos niveles educativos.
 
 ---
 
@@ -132,3 +135,6 @@ La variable Distance no especifica la unidad de medida en los datasets originale
 
 Este proyecto no solo busca cumplir con los requisitos de la evaluación, sino reflejar una forma de trabajar ordenada, razonada y defendible, alineada con el rol de analista de datos en un entorno profesional.
 
+En este proyecto no se implementa un proceso ETL completo, ya que el objetivo es analítico y no productivo. Sin embargo, se realizan tareas propias de la fase de transformación de datos, como la limpieza, agregación y enriquecimiento de la información, orientadas al análisis exploratorio, estadístico y visual de los datos.
+
+El enfoque seguido refleja una forma de trabajo habitual en el rol de analista de datos, priorizando la comprensión del comportamiento de los clientes y la correcta interpretación de los resultados frente a la automatización de procesos, en coherencia con los objetivos del ejercicio.
