@@ -22,13 +22,14 @@ El trabajo sigue una metodología clara y reproducible, similar a la que se util
 │   └── resolucion_final.ipynb
 │
 ├── outputs/
-│   ├── vuelos_por_mes.png
-│   ├── distancia_volada_y_puntos.png
-│   ├── clientes_por_provincia.png
-│   ├── salario_por_nivel_educativo.png
-│   ├── tarjetas_fidelidad.png
-│   └── estado_civil_genero.png
-│   └── matriz_correlacion.png
+    ├── vuelos_por_mes.png
+    ├── distancia_volada_y_puntos.png
+    ├── clientes_por_provincia.png
+    ├── salario_promedio_por_nivel_educativo.png
+    ├── tipos_tarjeta_fidelidad.png
+    ├── estado_civil_genero.png
+    ├── matriz_correlacion.png
+    └── boxplot_vuelos_por_nivel_educativo.png
 │
 ├── README.md
 ```
@@ -63,6 +64,8 @@ El proyecto se desarrolla siguiendo las siguientes fases:
 * Análisis de variables categóricas mediante distribuciones de frecuencia.
 
 En todos los casos, los resultados se acompañan de una **interpretación en lenguaje natural**, orientada a un público no técnico.
+
+El análisis se realiza a nivel de comportamiento mensual, en coherencia con la estructura temporal del dataset.
 
 ### 3️⃣ Visualización de datos
 
