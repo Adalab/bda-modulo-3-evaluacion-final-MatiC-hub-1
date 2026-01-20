@@ -18,7 +18,8 @@ El trabajo sigue una metodología clara y reproducible, similar a la que se util
 │   └── Customer Loyalty History.csv
 │
 ├── notebooks/
-│   └── resolucion_final.ipynb
+│   ├── resolucion_final.ipynb
+│   └── bonus_estadistica_inferencial.ipynb
 │
 ├── outputs/
 │   ├── vuelos_por_mes.png
@@ -26,18 +27,25 @@ El trabajo sigue una metodología clara y reproducible, similar a la que se util
 │   ├── clientes_por_provincia.png
 │   ├── salario_promedio_por_educacion.png
 │   ├── proporcion_tarjetas_fidelidad.png
-│   ├── clientes_por_estado_civil_y_genero.png
+│   ├── clientes_por_estado_civil_genero.png
 │   ├── matriz_correlacion.png
 │   └── boxplot_vuelos_por_nivel_educativo.png
 │
-└── README.md
+├── README.md
 
 ### Descripción de carpetas
 
-* **data/**: contiene los datasets originales proporcionados para el ejercicio (sin modificar).
-* **notebooks/**: notebook principal con todo el análisis, limpieza, visualizaciones e interpretaciones.
-* **outputs/**: resultados generados durante el análisis (principalmente gráficos).
-* **README.md**: documentación del proyecto.
+**data/**  
+Contiene los datasets originales proporcionados para el ejercicio, sin modificaciones.
+
+**notebooks/**  
+Incluye el notebook principal con todo el análisis exploratorio, estadístico y visual, así como un notebook adicional de bonus con un análisis de estadística inferencial.
+
+**outputs/**  
+Contiene las visualizaciones generadas durante el análisis, guardadas para facilitar su revisión independiente del notebook.
+
+**README.md**  
+Documento descriptivo del proyecto, metodología empleada y estructura del repositorio.
 
 ---
 
@@ -87,6 +95,15 @@ Las visualizaciones generadas durante el análisis se guardan en la carpeta outp
 * Cálculo de estadísticas descriptivas del número de vuelos reservados.
 * Interpretación de los resultados.
 
+### 5.- BONUS: Estadística Inferencial
+
+* De forma adicional, se incluye un notebook de bonus con un análisis de estadística inferencial (prueba de Kruskal–Wallis), utilizado como validación estadística de los resultados descriptivos y visuales del análisis principal.
+
+* REPRODUCIBILIDAD Y ORGANIZACIÓN DEL ANÁLISIS: Cada notebook del proyecto es reproducible de forma independiente. Por este motivo, en el notebook de bonus de estadística inferencial se reconstruye el dataset final a partir de las fuentes originales y de las transformaciones clave realizadas, evitando dependencias implícitas entre notebooks.
+
+* Este enfoque garantiza la trazabilidad del análisis, facilita su ejecución de principio a fin y refleja buenas prácticas habituales en proyectos de análisis de datos.
+
+
 ---
 
 ## Outputs generados
@@ -131,14 +148,15 @@ Durante la Fase 4 de evaluación de diferenccias se ha generado y guardado el si
 
 ## Notas finales
 
-La variable Distance no especifica la unidad de medida en los datasets originales. Dado que todos los registros corresponden a clientes de Canadá y que los valores observados son coherentes con programas de fidelización de aerolíneas en contexto norteamericano, se interpreta la distancia como expresada en millas. Esta suposición se documenta únicamente a efectos analíticos.
+## 🧾 Notas finales
 
-Este proyecto no solo busca cumplir con los requisitos de la evaluación, sino reflejar una forma de trabajar ordenada, razonada y defendible, alineada con el rol de analista de datos en un entorno profesional.
+La variable **Distance** no especifica explícitamente su unidad de medida en los datasets originales. Dado que todos los registros corresponden a clientes de Canadá y que los valores observados son coherentes con programas de fidelización de aerolíneas en contexto norteamericano, se interpreta la distancia como expresada en **millas**. Esta suposición se documenta únicamente a efectos analíticos.
 
-En este proyecto no se implementa un proceso ETL completo, ya que el objetivo es analítico y no productivo. Sin embargo, se realizan tareas propias de la fase de transformación de datos, como la limpieza, agregación y enriquecimiento de la información, orientadas al análisis exploratorio, estadístico y visual de los datos.
+Este proyecto no solo busca cumplir con los requisitos de la evaluación, sino reflejar una forma de trabajar **ordenada, razonada y defendible**, alineada con el rol de analista de datos en un entorno profesional.
 
-El enfoque seguido refleja una forma de trabajo habitual en el rol de analista de datos, priorizando la comprensión del comportamiento de los clientes y la correcta interpretación de los resultados frente a la automatización de procesos, en coherencia con los objetivos del ejercicio.
+No se implementa un proceso **ETL completo**, ya que el objetivo del ejercicio es analítico y no productivo. No obstante, se realizan tareas propias de la fase de transformación de datos —limpieza, agregación y enriquecimiento— orientadas al análisis exploratorio, estadístico y visual.
 
-Este ejercicio presenta un análisis exploratorio, estadístico y visual de datos de un programa de fidelización, siguiendo una metodología estructurada y coherente con la naturaleza temporal del dataset. Los resultados permiten comprender el comportamiento mensual de los clientes y sugieren que variables como el nivel educativo no introducen diferncias significativas en el número de vuelos reservados.
+El análisis se apoya en la estructura temporal del dataset, trabajando a nivel de **comportamiento mensual de los clientes**. Los resultados permiten comprender el patrón de reservas y sugieren que variables como el **nivel educativo no introducen diferencias significativas** en el número de vuelos reservados por mes.
 
-El enfoque adoptado prioriza la claridad analítica, la interpretación razonada y las buenas prácticas propias del rol de analista de datos, reflejando una forma de trabajo ordenada, defendible y alineada con un entorno profesional.
+En conjunto, el proyecto prioriza la claridad analítica, la correcta interpretación de los resultados y las buenas prácticas propias del análisis de datos, presentando un trabajo **reproducible, coherente y defendible**.
+
