@@ -13,6 +13,7 @@ El trabajo sigue una metodología clara y reproducible, similar a la que se util
 
 ## Estructura del repositorio
 
+```
 ├── data/
 │   ├── Customer Flight Activity.csv
 │   └── Customer Loyalty History.csv
@@ -31,7 +32,8 @@ El trabajo sigue una metodología clara y reproducible, similar a la que se util
 │   ├── matriz_correlacion.png
 │   └── boxplot_vuelos_por_nivel_educativo.png
 │
-├── README.md
+└── README.md
+```
 
 ### Descripción de carpetas
 
